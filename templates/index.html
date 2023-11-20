@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Keyword Finder</h1>
+
+    <form method="post">
+        <label for="keyword">Enter keyword:</label>
+        <input type="text" id="keyword" name="keyword" required>
+
+        <label for="timeframe">Select timeframe:</label>
+        <select name="timeframe" id="timeframe" required>
+            <option value="24H">24 Hours</option>
+            <option value="7D">7 Days</option>
+            <option value="30D">30 Days</option>
+            <option value="3M">3 Months</option>
+        </select>
+
+        <label for="location">Select location:</label>
+        <select name="location" id="location" required>
+            <option value="US">United States</option>
+            <option value="WW">Worldwide</option>
+        </select>
+
+        <input type="submit" value="Find Keywords">
+    </form>
+</body>
+</html>
