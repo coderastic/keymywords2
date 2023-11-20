@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword Finder Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Popular Related Keywords for "{{ keyword }}"</h1>
+    <h4>Timeframe: {{ timeframe }}</h4>
+    <h4>Location: {{ location }}</h4>
+
+    <ul>
+        {% for keyword in popular_related_keywords %}
+            <li>{{ keyword }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/copy-keywords" class="button">Copy Keywords</a>
+</body>
+</html>
